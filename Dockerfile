@@ -7,7 +7,7 @@ RUN apk upgrade
 RUN apk add curl wget bash git which
 
 # Install PHP5.6 and packages
-RUN apk --update add apache2 php5-apache2 ruby ruby-bundler curl \
+RUN apk --update add apache2 php5 php5-apache2 ruby ruby-bundler curl \
     php5-json \
     php5-phar \
     php5-openssl \
