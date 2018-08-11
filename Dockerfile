@@ -21,4 +21,4 @@ RUN apk --update add apache2 php5-apache2 ruby ruby-bundler curl \
     php5-dom \
     php5-iconv \
     && rm -f /var/cache/apk/* \
-    && && curl -sS https://getcomposer.org/installer | php5 -- --install-dir=/usr/local/bin --filename=composer
+    && curl -sS https://getcomposer.org/installer | php5 -- --install-dir=/usr/local/bin --filename=composer
