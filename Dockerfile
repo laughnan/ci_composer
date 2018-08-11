@@ -20,8 +20,7 @@ RUN apk --update add apache2 php5-apache2 curl \
     php5-xml \
     php5-dom \
     php5-iconv \
-    && rm -f /var/cache/apk/* \
-    && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+    && rm -f /var/cache/apk/*
 
 # Install ruby and ruby-bundler
 RUN apk add ruby ruby-bundler
@@ -30,4 +29,4 @@ RUN apk add ruby ruby-bundler
 RUN rm -f /var/cache/apk/*
 
 # Install composer for Drupal 8 builds.
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN curl -sS https://getcomposer.org/installer | php5 -- --install-dir=/usr/local/bin --filename=composer
