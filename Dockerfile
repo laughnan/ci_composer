@@ -22,5 +22,6 @@ RUN apk --update add apache2 php7 php7-apache2 ruby ruby-bundler ruby-rdoc ruby-
     php7-xml \
     php7-dom \
     php7-iconv \
+    php7-session \
     && rm -f /var/cache/apk/* \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
