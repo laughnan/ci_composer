@@ -11,7 +11,7 @@ RUN apk --update add apache2 php7 php7-apache2 ruby ruby-bundler ruby-rdoc ruby-
     php7-json \
     php7-phar \
     php7-openssl \
-    php7-mysql \
+    php7-mysqli \
     php7-curl \
     php7-mcrypt \
     php7-pdo_mysql \
