@@ -8,6 +8,8 @@ RUN apk add curl wget bash git which
 
 # Install PHP7 and packages
 RUN apk --update add apache2 php7 php7-apache2 ruby ruby-bundler ruby-rdoc ruby-irb curl \
+    php7-mbstring \
+    php7-tokenizer \
     php7-json \
     php7-phar \
     php7-openssl \
